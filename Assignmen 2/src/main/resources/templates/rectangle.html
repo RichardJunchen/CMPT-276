@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./stylesheets/same.css">
+    <link rel="stylesheet" href="./stylesheets/add.css">
+    <title>Add new Rectangles</title>
+  </head>
+  <body style = "background-image: url(./background2.jpg);background-size: 100%;">
+    <div id = "back_gray">
+
+      <div id = "back_white">
+        <div id="title"><h1>Personal Tailor</h1></div>
+        <div id="sub"><h2>Create and design your own rectangle </h2></div>
+        <div id="sub_title"><h3>Add Page</h3></div>
+
+        <div id = "left">
+
+          <form action="#" method="post" th:action = "@{/rectangle}" th:object = "${rectangle}">
+            <a class="tab">Name : </a>
+            <input class = add_input id = "name" type="text" th:field =*{name} placeholder="name"> <br>
+            <a class="tab">Width : </a>
+            <input class = add_input id = "width" type="text" th:field =*{width} placeholder="width"> <br>
+            <a class="tab">Height : </a>
+            <input class = add_input id = "height" type="text" th:field =*{height} placeholder="height"> <br>
+            <a class="tab">Color : </a>
+            <input class="add_input" id = "color" type="text" list="appNamelist" th:field =*{color} placeholder="color" >
+              <datalist id="appNamelist">
+                <option>red</option>
+                <option>blue</option>
+                <option>green</option>
+                <option>black</option>
+                <option>white</option>
+                <option>purple</option>
+                <option>orangle</option>
+                <option>yellow</option>
+                <option>brown</option>
+                <option>grey</option>
+                <option>gold</option>
+                <option>silver</option>
+              </datalist> <br>
+            <a class="tab">Price : </a>
+            <input class = add_input id = "price" type="number" th:field =*{price} placeholder="price"> <br>
+            <input class = add_input type="submit" value = "Submit Rectangles">
+          </form>
+        </div>
+
+        <div id = "right">
+          <input  class = " inner" id = "1" type="text" style="border: 0; background-color: white; font-size: 1em;"> <br>
+          <input  class = " inner" id = "2" type="text" style="border: 0; background-color: white; font-size: 1em;"> <br>
+          <input  class = " inner" id = "3" type="text" style="border: 0; background-color: white; font-size: 1em;"> <br> 
+          <input  class = " inner" id = "4" type="text" style="border: 0; background-color: white; font-size: 1em;"> <br> 
+          <input  class = " inner" id = "5" type="text" style="border: 0; background-color: white; font-size: 1em;"><br>         
+          
+
+          <button id = "back_button" type="button" name="button" onclick="back_to_home()"><span>Back Home </span></button> 
+          <button id = "back_button2" type="button" name="button" onclick="view_rectangle()"><span>VIEW IT </span></button> 
+        </div>
+
+
+
+      </div>
+    </div>
+    <script type="text/javascript" src = "./word.js">
+
+    </script>
+  </body>
+</html>

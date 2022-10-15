@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/stylesheets/same.css}">
+    <link rel="stylesheet" th:href="@{/stylesheets/delete.css}">
+    <link rel="stylesheet" th:href="@{/stylesheets/view_rectangle.css}">
+    <title>View</title>
+</head>
+  <body>
+        <div id="back_gray">
+    
+          <div id="back_white">
+    
+            <div id="title"><h1>View your Rectangle!</h1></div>
+            <div id="sub_title_view"><h2>View Page</h2></div> <br>
+
+            <table id = "table_view">
+                <tr>
+                  <th>Name</th>
+                  <th>Width</th>
+                  <th>Height</th>
+                  <th>Color</th>
+                  <th>Price</th>
+                </tr> 
+                <tr th:each="view: ${views}">
+                  <td th:text="${view.name}"></td>
+                  <td th:text="${view.width}"></td>
+                  <td th:text="${view.height}"></td>
+                  <td th:text="${view.color}"></td>
+                  <td th:text="${view.price}"></td>
+                </tr>
+              </table>
+              <br>
+              <a id= "sub_title_view" th:href="@{/delete_rectangle}">Back to the list</a>
+          </div>
+        </div>
+ </body>
+</html>

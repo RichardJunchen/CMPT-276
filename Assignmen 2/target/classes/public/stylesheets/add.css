@@ -1,0 +1,114 @@
+#title{
+    display:block;
+    word-break:keep-all;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    color:black;
+    font-size: 1.5em;
+    margin:-270px 10px 0 -120px;
+    text-shadow: 5px 5px 5px goldenrod;
+    font-family:"Brush Script MT";
+    }
+    #sub{
+    display:block;
+    word-break:keep-all;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    color:black;
+    font-size: 1em;
+    margin:-2px 20px 20px -185px;
+    font-family:"Times New Romane"; 
+    }
+  #sub_title{
+    display:block;
+    word-break:keep-all;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    color:black;
+    font-size: 1em;
+    margin:-2px 20px 20px -45px;
+    font-family:"Times New Romane";
+  }
+  #title_succ{
+    display:block;
+    word-break:keep-all;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    color:black;
+    font-size: 1em;
+    margin:-100px 10px 0 -200px;
+    font-family:'Times New Roman', Times, serif;
+    }
+    #sub_succ{
+    display:block;
+    word-break:keep-all;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    color:black;
+    font-size: 1em;
+    margin:60px 20px 20px -185px;
+    font-family:"Times New Romane"; 
+    }
+  #sub_title_succ{
+    display:block;
+    word-break:keep-all;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    color:green;
+    font-size: 1em;
+    margin:-2px 20px 20px -45px;
+    font-family:"Times New Romane";
+  }
+  
+  #left{
+    float:left; width:100px;
+    width:300px;
+    height:400px;
+    margin:-2px 20px 20px -275px;
+    z-index:-2;
+  }
+  #right{
+    float:right; width:20px;
+    width:230px;
+    height:400px;
+    margin:-420px -260px 20px 30px;
+  }
+  
+  
+  .add_input{
+    margin:25px 20px 20px 20px;
+    width:150px;
+    height:25Px;
+  }
+  
+  .tab{
+    margin:25px 20px 20px 13px;
+  }
+  
+  .inner{
+    margin:20px 20px 20px 20px;
+    width:180px;
+    height:25Px;
+  }
+  
+  
+  #back_button2{
+    color:blue;
+    padding:10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+  }
+  
+  #back_button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  

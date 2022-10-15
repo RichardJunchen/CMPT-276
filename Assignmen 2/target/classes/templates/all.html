@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/same.css">
+    <link rel="stylesheet" href="./stylesheets/delete.css">
+    <link rel="stylesheet" href="./stylesheets/all.css">
+    <title>All Rectangle</title>
+</head>
+<body>
+    <body style = "background-image: url(./background4.jpg); background-size: 100%;">
+        <div id="back_gray">
+    
+          <div id="back_white">
+    
+            <div id="title_all" ><h1>Rectangle Warehouse</h1></div> 
+            <div id="sub_all"><h2>Check all your Rectangles</h2></div>
+            <div id="sub_title_all"><h3> All Page</h3></div>
+            <table id = "table">
+              <tr>
+                <th class="tag">Name</th>
+                <th class="tag">Width</th>
+                <th class="tag">Height</th>
+                <th class="tag">Color</th>
+                <th class="tag">Price</th>
+              </tr> 
+
+              <tr th:each="all_rectangle: ${all_rectangles}">
+                <td><a th:text="${all_rectangle.name}"></a></td>
+                <td th:text="${all_rectangle.width}"></td>
+                <td th:text="${all_rectangle.height}"></td>
+                <td th:text="${all_rectangle.color}"></td>
+                <td th:text="${all_rectangle.price}"></td>
+              </tr>
+            </table>
+            <br>
+            <a id= "sub_title_all" th:href="@{/}" >Back to home page!</a>
+          <div>
+        <div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/same.css">
+    <link rel="stylesheet" href="./stylesheets/delete.css">
+    <title>Delete</title>
+</head>
+<body>
+    <body style = "background-image: url(./background3.jpg); background-size: 100%;">
+        <div id="back_gray">
+    
+          <div id="back_white">
+    
+            <div id="title"><h1>The Refuse Incinerator</h1></div>
+            <div id="sub"><h2>Dispose of rectangles you don't need</h2></div>
+            <div id="sub_title_delete"><h3>Delete Page</h3></div> <br>
+
+            <table id = "table">
+              <tr>
+                <th class="tag">Name</th>
+                <th class="tag">Color</th>
+                <th class="tag">Choose</th>
+              </tr> 
+
+              <tr th:each="record: ${records}">
+                <td><a th:text="${record.name}" th:href="@{'/view/'+${record.id}}"></a></td>
+                <td th:text="${record.color}"></td>
+                <td><a th:href="@{'/delete/'+${record.id}}"> Delete</a></td>
+              </tr>
+            </table>
+            <a id= "sub_title_delete" th:href="@{/}" >Back to home page!</a>
+          <div>
+        <div>
+          
+
+</body>
+</html>

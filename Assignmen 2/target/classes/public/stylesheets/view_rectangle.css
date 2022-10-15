@@ -1,0 +1,19 @@
+
+#table_view{
+	margin:-10px 20px 20px -265px;
+    text-align: center;
+    border: black 10px;
+    width: 500px;
+    height: 200px;
+}
+
+#sub_title_view{
+    display:block;
+    word-break:keep-all;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    color:green;
+    font-size: 1em;
+    margin:20px 20px 20px -45px;
+    font-family:"Times New Romane";
+  }

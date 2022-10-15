@@ -1,0 +1,12 @@
+1. The URL link:
+https://junchen-rectangle.herokuapp.com
+
+2. git link : 
+Clone with SSH
+git@csil-git1.cs.surrey.sfu.ca:junchenl/cmpt276Assignment2.git
+
+Clone with HTTPS
+https://csil-git1.cs.surrey.sfu.ca/junchenl/cmpt276Assignment2.git
+
+
+Please note: I develop the first version at the beginning, however, it always fails when I push it. I don't know the exactly reason, so I built another project. What I trying to say is if there isn't have a lot of log book, or something like the "commit sentence", I believe I wrote them in my first version.
