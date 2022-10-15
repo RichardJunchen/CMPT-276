@@ -1,0 +1,61 @@
+.contact-container{
+    width: 100%;
+}
+
+.contact-navigation{
+    width:150px;
+    height:600px;
+    background:#5a6a72;
+    transition: 0.5s;
+    margin: -360px 0 0 300px;
+}
+
+.contact-navigation.active{
+    width:60px;
+}
+
+.contact-navigation ul{
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.contact-navigation ul li{
+    width:100%;
+    list-style: none;
+    cursor: pointer;
+}
+
+.contact-navigation ul li:hover{
+    margin: 0 0 0 -20px;
+    font-size: 25px;
+}
+
+/* .contact-navigation ul li:nth-child(1):hover{
+    background: transparent;
+} */
+
+.contact-navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.contact-title2{
+    margin: 50px 0 0 -10px;
+    position: relative;
+    height: 60px;
+    white-space: nowrap;
+    color: #fff;
+}
+
+.page-1{
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    margin: -600px 0 0 450px;
+    background-color: white;
+}

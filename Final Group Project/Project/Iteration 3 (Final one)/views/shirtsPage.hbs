@@ -1,0 +1,80 @@
+{{!-- <div class="container">
+{{#grouped_each 3 books}}
+    <div class="row">
+    {{#each this }}
+        <div class="span4 book" data-isbn="{{ isbn }}">
+            <strong>{{ name }}</strong>
+        </div>
+    {{/each}}
+    </div>
+{{/grouped_each}}
+</div> --}}
+
+{{!-- The shopping page item --}}
+<br><br>
+<a href="/home" style = "margin-left:20px; font-size:20px;text-decoration:underline">Go back to home page</a>
+<table border = "0" width = "100%" height = "46%">
+    <tr>
+        <td colspan = "5"><h2>{{category}}</h2><hr></td>
+    </tr>
+    {{#grouped_each 4 shirts}}
+    <tr>
+            {{#each this }}
+        <th>
+            <div class = "product">
+                <div class="showAllProduct">
+                    <img src="./uploads/{{product_img}}" class="mainImage mainImage1" style="opacity:1;">
+                    <img src="image/bottle.jpg" class="mainImage mainImage1" style="opacity:0;">
+                    <img src="image/clothing.jpg" class="mainImage mainImage1" style="opacity:0;">
+                    <img src="image/all.jpg" class="mainImage mainImage1" style="opacity:0;">
+                    <a class = "pop_button">Quick Look</a>
+                    
+                    <div class = "pop_window">
+                         <div class = "pop_part">
+                             <img class = "close" src="image/close.png">
+                             <div class = "product-img">
+                                <img src="./uploads/{{product_img}}" alt="">
+                            </div>
+                        <div class = "info">
+                           <h2>{{product_name}}<br> <br><span>{{category}}</span></h2>
+                             <p>{{product_desc}}</p>
+                            <a href="#" class = "add-cart-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="show-left" onclick="left_click(1)">&lt;</div>
+                    <img src="image/backpack.jpg" class="subImage subImage1" style="margin-left: 30px;">
+                    <img src="image/bottle.jpg" class="subImage subImage1">
+                    <img src="image/clothing.jpg" class="subImage subImage1">
+
+                <div class="show-right" onclick="right_click(1)">&gt;</div>
+                    <h4 style="text-align:center">{{product_name}}</h4>
+                    <p style="text-align:center">{{product_desc}}</p>
+                </div> 
+        </th>
+                {{/each}}
+        </tr>
+        {{/grouped_each}}
+</table>
+
+<script type = "text/javascript">
+var popupViews = document.querySelectorAll('.pop_window');
+var popupBtns = document.querySelectorAll('.pop_button');
+var closeBtns = document.querySelectorAll('.close');
+var popup = function(popupClick){
+    popupViews[popupClick].classList.add('active')
+}
+popupBtns.forEach((popupBtn , i)=> {
+    popupBtn.addEventListener("click", ()=> {
+        popup(i);
+    });
+});
+closeBtns.forEach((closeBtn)=> {
+    closeBtn.addEventListener("click", ()=> {
+        popupViews.forEach((popupViews) => {
+            popupViews.classList.remove('active');
+        });
+    });
+});
+</script>

@@ -1,0 +1,70 @@
+<script src = "/js/productPage.js"></script>
+<div class="detailContainer">
+  <!-- Left Column -->
+  <div class="left-column">
+    <div class="box-left" onclick="leftButton()">&lt;</div>
+    {{#each productImages}}
+    <img data-image="black" src="/uploads/{{product_img}}" class="show-img" style="opacity:1;">
+    {{/each}}
+    
+    <div class="box-right" onclick="rightButton()">&gt;</div>
+  </div>
+
+
+
+  <!-- Right Column -->
+  <div class="right-column">
+
+    <!-- Product Description -->
+    <div class="product-description">
+      {{#each productDetails}}
+      <span>{{category}}</span>
+      <h1>{{product_name}}</h1>
+      <p>{{product_desc}}</p>
+      {{/each}}
+    </div>
+
+    <!-- Product Configuration -->
+    <div class="product-configuration">
+
+      <!-- Product Color -->
+      <div class="product-config">
+
+
+        <span>Genders</span>
+        <div id="gendersDiv" class="product-choose">
+          {{!-- {{#each productGenders}}
+          <button>{{gender}}</button>
+          {{/each}} --}}
+        </div>
+
+        <span>Colors</span>
+        <div id="colorsDiv" class="product-choose">
+          {{!-- {{#each productColors}}
+          <button>{{color}}</button>
+          {{/each}} --}}
+        </div>
+
+        <span>Sizes</span>
+        <div id="sizesDiv" class="product-choose">
+          {{!-- {{#each productSizes}}
+          <button>{{size}}</button>
+          {{/each}} --}}
+        </div>
+
+   
+      </div>
+
+  
+      <!-- Product Cart -->
+      <div class="product-cart">
+        <!--<span>148$</span>-->
+        <form id = "addToCartForm" action="https://google.com" onSubmit = "return checkForm()">
+          <input type="submit" class = "cart-btn" id = "addCartBtn" value="Add to cart" />
+        </form>
+        
+      </div>
+    </div>
+
+
+  </div>

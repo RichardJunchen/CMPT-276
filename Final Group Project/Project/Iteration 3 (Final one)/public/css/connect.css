@@ -1,0 +1,249 @@
+#product-table th, td {
+  width: 250px;
+  height:80px;
+  overflow: hidden;
+  text-align:center;
+  margin-right:10px;
+}
+
+.connect-container{
+    position:relative;
+    width: 100%;
+}
+
+.connect-navigation{
+    position:fixed;
+    width:300px;
+    height:100%;
+    background:#003147;
+    transition: 0.5s;
+}
+
+.connect-navigation.active{
+    width:60px;
+}
+.connect-navigation.active img{
+    width:40px;
+    height: 40px;
+    margin: 0 0 0 -30px;
+}
+
+.connect-navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.connect-navigation ul li{
+    position: relative;
+    width:100%;
+    list-style: none;
+}
+
+.connect-navigation ul li:hover{
+    background: #03a9f4;
+}
+
+/* .connect-navigation ul li:nth-child(1):hover{
+    background: transparent;
+} */
+
+.connect-navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.connect-navigation ul li img{
+    position: relative;
+    display: block;
+    width:90px;
+    height: 100px;
+    text-align: center;
+}
+
+.connect-title1{
+    margin: 50px 0 0 10px;
+    display: block;
+    position: relative;
+    height: 60px;
+    white-space: nowrap;
+}
+.connect-title2{
+    margin: 50px 0 0 40px;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+}
+
+.connect-main{
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background: #f5f5f5;
+    transition: 0.5s;
+}
+.connect-main.active{
+    width:calc(100% - 60px);
+    left: 60px;
+}
+.connect-main .topbar{
+    width:100%;
+    background: #fff;
+    height: 60px;
+    padding: 0 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.connect-toggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.connect-toggle img{
+    position: relative;
+    display: block;
+    width:30px;
+    height: 30px;
+    margin: 15px 0 0 10px;
+    text-align: center;
+}
+.connect-toggle::before{
+    font-family: fontAwsome;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    line-height: 60px;
+    font-size: 24px;
+    color: #111;
+}
+
+.connect-details{
+    position: relative;
+    width: 100%;
+    height:20px;
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.connect-details .recentOrders{
+    position: relative;
+    display: grid;
+    background: #fff;
+}
+
+.cardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cardHeader h2{
+    font-weight: 600;
+}
+
+.connect-btn{
+    position: relative;
+    padding: 5px 10px;
+    background:#03a9f4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.connect-details table{
+    width: 60%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.connect-details .table1{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.connect-details table thead td{
+    font-weight: 600;
+}
+
+.connect-details .recentOrders table tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.connect-details .recentOrders table tbody tr:last-child{
+    border-bottom: none;
+}
+
+.connect-details .recentOrders table tbody tr:hover{
+    background: #03a9f4;
+    color:#fff;
+}
+
+.connect-details .recentOrders table tr td{
+    padding: 9px 5px;
+}
+
+.status{
+    position: relative;
+    padding: 2px 4px;
+    background: #f00;
+    color:#fff;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+}
+.connect-title2{
+
+    color: #fff;
+
+}
+.deliever{
+    background: #8de02c;
+}
+
+.pending{
+    background: #1795ce;
+}
+
+.out{
+    background: #f9ca3f;
+}
+.admin{
+    background: #1795ce;
+}
+.tttt{
+    background: #fff;
+    padding: 50px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+.grid-container1 {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }

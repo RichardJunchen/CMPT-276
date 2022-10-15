@@ -1,0 +1,65 @@
+<div class = "small-container">
+    <table class = "cart-table">
+        <tr>
+            <th class = "cartTh">Product</th>
+            <th class = "cartTh">Quantity</th>
+            <th class = "cartTh">Gender</th>
+            <th class = "cartTh">Size</th>
+            <th class = "cartTh">Color</th>
+            <th class = "cartTh">Description</th>
+
+        </tr>
+
+        {{#each cart}}
+        <tr>
+            <td class = "cartTd">
+                <div class = "cart-info">
+                    <img src="/uploads/{{product_img}}" alt="">
+                    <div>
+                        <br/>
+                        <br/>
+                        <p>{{product_name}}</p>
+                        <br>
+                    </div>
+                </div>
+            </td>
+
+            <td class="cartTd"><input type="number" value={{order_count}}></td>
+             <td class="cartTd"><p>{{gender}}</p></td>
+
+            <td class="cartTd"><p>{{size}}</p></td>
+
+            <td class="cartTd"><p>{{color}}</p></td>
+
+            <td class="cartTd">
+                <p>{{product_desc}}</p>
+            </td>
+        </tr>
+        {{/each}}
+    </table>
+    <table border = "0" width = "100%" height = "20%" bgcolor = "bisque">
+    <tr>
+        <th align = "center">
+            <div class = "container">
+                <a href="/shopAllProducts">
+                    <div class = "categories" style="margin: 20px 0 0 50px; padding:10px;">
+                        <img src="/image/all.jpg" class = "item-image">
+                        <div class = "image-title" >All categories</div>
+                    </div>
+                </a>
+            </div>
+        </th>
+
+        <th align = "center">
+            <div class = "container">
+                <a href="/checkoutPage/{{order_id}}">
+                    <div class = "categories" style="margin-right:100px; padding:10px;">
+                        <img src="/image/cart.png" class = "item-image">
+                        <div class = "image-title">Checkout</div>
+                    </div>
+                </a>
+            </div>
+        </th>
+    </tr>
+</table>
+</div>

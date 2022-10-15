@@ -1,0 +1,257 @@
+#filters{
+    margin-left: 100px;
+    margin-bottom: -20px;
+    margin-top: 30px;
+}
+
+.showAllProduct{
+    position: relative;
+    width: 300px;
+    margin-left: 38px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    float: left;
+}
+.mainImage{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    margin-left:0px;
+}
+
+.subImage{
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-top: 286px;
+}
+.h4{
+  margin-left:-15px;
+}
+.show-left{
+    position:absolute;
+    width:30px;
+    height:80px;
+    background-color: #00000050;
+    color: #ccc;
+    border-radius:0 5px 5px 0;
+    text-align:center;
+    line-height:70px;
+    font-size:27px;
+    margin-top: 286px;
+}
+
+.show-left:hover{
+    background-color:#00000050;
+    color:#fff;
+}
+
+.show-right{
+    position:absolute;
+    width:30px;
+    height:80px;
+    background-color: #00000050;
+    color: #ccc;
+    border-radius: 5px 0 5px 0;
+    text-align:center;
+    line-height:70px;
+    font-size:27px;
+    right:0px;
+    margin-top: 286px;
+    margin-left: 270px;
+}
+
+.show-right:hover{
+    background-color:#00000050;
+    color:#fff;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: absolute;
+    float: left;
+
+    
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+    }
+
+
+.view-btn{
+  z-index : 1;
+  color:white;
+  background-color: #555;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding:10px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left:-15px;
+}
+
+
+
+.pop_button{
+  z-index : 1;
+  color:white;
+  background-color: #66ffcc;
+  position: absolute;
+  bottom:230px;
+  left:50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding:10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left:-15px;
+  margin-bottom:-33px;
+}
+
+.product .pop_window{
+  z-index:2;
+  background: rgba(255,255,255,0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.product .pop_window.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.product .pop_part{
+  position: relative;
+  display: flex;
+  width: 800px;
+  height: 500px;
+  margin: 20px;
+}
+
+.product .pop_part .product-img{
+  z-index:4;
+  background: #1D212B;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  height: 90%;
+  transform: translateY(25px);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.product .pop_part .product-img img{
+  z-index: 4;
+  position: relative;
+  width: 450px;
+  padding:10%
+}
+
+.product .pop_part .info{
+  z-index: 4;
+  background: #99ccff;
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+  border-radius: 10px;
+}
+.product .pop_part .close{
+  color: #555;
+  z-index: 5;
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.product .pop_part .info h2{
+  font-size: 40px;
+  line-height: 20px;
+  margin: 20px;
+}
+
+.product .pop_part .info h2 span{
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.product .pop_part .info p{
+  font-size: 15px;
+  margin: 10px;
+}
+
+.product .pop_part .info .add-cart-btn{
+  color: #fff;
+  background: #00CC33;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 10px auto;
+  padding: 10px 50px;
+  border-radius:20px;
+}

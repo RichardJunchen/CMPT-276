@@ -1,0 +1,56 @@
+<h1 class = "check_h1">You're almost there..</h1>
+<h2 class = "check_h2">Required Checkout Form</h2>
+
+<div class="row">
+    <div class="col-75">
+        <div class="checkout_container">
+            <form id="validate" method = "post" action="/submitOrder/{{order_id}}">
+                <div class="row">
+                    <div class="col-50">
+                        <h3>Billing Address</h3>
+                        <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                        <input class = "checkout_input" type="text" id="fname" name="fullname" placeholder="Your Name" required>
+                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                        <input class = "checkout_input" type="text" id="email" name="email" value="{{email}}" required>
+                        <label for="city"><i class="fa fa-institution"></i> City</label>
+                        <select name = "location" class="form-control mb-3">
+                            <option>Burnaby</option>
+                            <option>Metrotown</option>
+                            <option>New Westminster</option>
+                            <option>Richmond</option>
+                            <option>Surrey</option>
+                            <option>Vancouver</option>
+                         </select>
+                        <label for="request"><i class="fa fa-institution"></i>Request Type</label>
+                        <select id = "request" name = "request" class="form-control">
+                            <option>Personal</option>
+                            <option>Client</option>
+                         </select>
+
+                    {{!-- Should be type of request --}}
+                    </div>
+                    <div class="col-50">
+                        <h3 style = "margin:10px 0 0 180px;">
+                            User Agreement 
+                        </h3>
+                        <p style = "text-align: left; margin: 20px 0 0 0">
+                            This Agreement contains the entire agreement between the Parties and supersedes any previous understanding, 
+                            commitments or agreements, oral or written. Further, this Agreement may not be modified, changed, 
+                            or otherwise altered in any respect except by a written agreement signed by both Parties.
+                            IN WITNESS WHEREOF, this Agreement, including the attached Schedule, was signed by the Parties under the hands of their duly authorized representatives 
+                            and made effective as of the [Commencement date].
+                        </p>
+                    </div>
+
+                    <div class ="mt-3">
+                        <input type="checkbox" class = "ml-3" checked="checked" name="sameadr" required>
+                        <label>I agree to all terms.</label>
+                        </label>
+                    </div>
+                </div>
+                <input type="submit" value="Continue to checkout" class="btn">
+            </form>
+        </div>
+    </div>
+    
+</div>
