@@ -1,0 +1,131 @@
+
+#back_brown{
+  background-color: rgb(60,57,54);
+  width: 46%;
+  padding: 300px;
+  z-index: -1;
+  height:290px;
+  margin:-30px 10px 0 50px;
+}
+
+#back_white{
+  background-color: white;
+  width: 66.7%;
+  padding: 420px;
+  height:0px;
+  margin:-260px 10px 0 -300px;
+}
+
+#header1{
+  font-size: 2em;
+  color: black;
+  margin:-355px 10px 0 -370px;
+  font-family:"Times New Romane";
+  font-weight: normal;
+}
+
+#inside{
+  background-color: rgb(234,239,241);
+  width: 90%;
+  padding: 302px;
+  height:90px;
+  margin:10px 10px 0 -370px;
+}
+
+.reset_button{
+  color:DarkOrchid  ;
+  font-size: 1em;
+  background-color: PaleGreen ;
+  margin-right: -20px;
+}
+
+#header2{
+  margin:-250px 10px 0 -260px;
+  color:rgba(155, 41, 47,0.9);
+}
+
+#header3{
+  margin:0px 10px 0 -260px;
+  font-weight: normal;
+}
+
+#first_line{
+  background-color: rgb(221,221,221);
+}
+
+table{
+  text-align: center;
+  border: black 10px;
+  width: 95%;
+  margin：25px 0;
+  margin-left: -75%;
+  width: 900px;
+  height: 450px;
+
+}
+
+#new_line{
+  margin-left: -75%;
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 10px;
+  color: #FFFFFF;
+  padding: 7px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+#new_line:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+#new_line:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+label{
+  margin-left: -75%;
+  color:rgba(155, 41, 47,0.9);
+  font-size: 1.5em;
+  font-weight:bold;
+  text-decoration: none;
+}
+
+.button{
+  background-color: rgb(169,39,32);
+  color: white;
+  padding: 10px 10px 10px 10px;
+  font-size: 1em;
+  margin: -50px 30px 60px 60px;
+  border: none;
+  text-align: center;
+  border-radius: 6px;
+  float: left;
+}
+
+.button:hover {background-color: green}
+
+.button:active {
+  background-color: #3e8e41;
+
+[name = "mean"]{
+  padding-left: 30px;
+  padding-right: 30px;
+}

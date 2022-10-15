@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CourSys-Formula Tester</title>
+    <link rel="stylesheet" href="./stylesheets/calculator.css">
+  </head>
+  <body>
+    <body style = "background-image: url(./background.png);">
+
+        <div id="back_brown">
+
+          <div id = "back_white">
+
+            <h1 id = "header1">Grade Calculator</h1>
+              <div id="inside">
+              <h2 id = "header2"> Activities </h2> <br>
+              <h3 id = "header3"> Give grades to the numeric activities:</h3> <br>
+
+              <table id = "table" border="2" style="border-collapse: collapse;">
+                <tr id = "first_line">
+                  <th>Name</th>
+                  <th>Short Name</th>
+                  <th>Weight</th>
+                  <th>Grade  <button class = "reset_button" type="button" name="reset" onclick = "clean_all()" > Reset</button></th>
+                  <th>Percent</th>
+                </tr>
+                <tr>
+                  <td>Activity 1</td> <td>A1</td><td><input type="text" id="weight1" value="" placeholder = "Weight"></td>
+                  <td><input type="text" id="got1" value="" placeholder = "Score"> / <br> <input type="text" id="total1" value="" onkeyup="sum(this,this.id)" placeholder = "Total"></td>
+                  <td> <input type=text id="ans1" value = "" style="border: 0; background-color: rgb(234,239,241); font-size: 1em; text-align:center"></td>
+                </tr>
+                <tr>
+                  <td>Activity 2</td> <td>A2</td><td><input type="text" id="weight2" value="" placeholder = "Weight"></td>
+                  <td><input type="text" id="got2" value="" placeholder = "Score"> / <br> <input type="text" id="total2" value="" onkeyup="sum(this,this.id)" placeholder = "Total"></td>
+                  <td> <input type="text" id="ans2" value = "" style="border: 0; background-color: rgb(234,239,241); font-size: 1em; text-align:center"></td>
+                </tr>
+                <tr>
+                  <td>Activity 3</td> <td>A3</td><td><input type="text" id="weight3" value="" placeholder = "Weight"></td>
+                  <td><input type="text" id="got3" value="" placeholder = "Score"> / <br> <input type="text" id="total3" value="" onkeyup="sum(this,this.id)" placeholder = "Total"></td>
+                  <td> <input type="text" id="ans3" style="border: 0; background-color: rgb(234,239,241);font-size: 1em; text-align:center"></td>
+                </tr>
+                <tr>
+                  <td>Activity 4</td> <td>A4</td><td><input type="text" id="weight4" value="" placeholder = "Weight"></td>
+                  <td><input type="text" id="got4" value="" placeholder = "Score"> / <br> <input type="text" id="total4" value="" onkeyup="sum(this,this.id)" placeholder = "Total"></td>
+                  <td> <input type="text" id="ans4" style="border: 0; background-color: rgb(234,239,241);font-size: 1em; text-align:center"></td>
+
+                </tr>
+              </table>
+              <br>
+
+              <button id = "new_line" type="button" name="mean" onclick = "addRow()"> + Add New Line </button><br>
+              <label for="" id = "result"> Result</label> <br>
+
+              <input type="text" id = "mean" style="border: 0; background-color: rgb(234,239,241);
+              text-align:center; margin-left:-75%;color: green; font-size:1.55em"> <br>
+
+              <input type="text" id = "weighted" style="border: 0; background-color:white;
+              text-align:center; margin-left:-170%;color: green; font-size:1.55em">
+
+            <button class = "button" type="button" name="mean" onclick = "mean(this)"> MEAN </button>
+            <button class = "button" type="button" name="weighted" onclick = "weight(this)" > WEIGHTED</button>            </div>
+
+          </div>
+
+         </div>
+
+         <script type="text/javascript" src="./calculator.js">
+         </script>
+  </body>
+</html>
